@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+
+    <title>Seina.M Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
+    <header>
+        <h1><a href="#top">Seina.M Portfolio</a></h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="contents">
+            <h2 id="top">Seina.M Portfolio Site</h2>
+            <div class="block">
+                <h3>
+                    Welcome to my portfolio site! Have fun!<br>
+                </h3>
+            </div>
+        </div>
+        <div class="contents">
+            <h2 id="aboutme">About me</h2>
+            <div class="block">
+                <div class="me">
+                    <p>
+                        関東出身。大学では理学部の地学系に進みました。<br>
+                        大学卒業後、就職活動の一環で就労移行支援事業所Kaienに入所し、クリエイティブコースで業務効率化やITスキルを学びました。<br>
+                        大学時代に講義でFortran90/95、Pythonに軽く触れたことはありましたが、それ以外のITスキルは（せいぜい学校の情報の授業くらいで）ほぼゼロからの勉強でした。<br>
+                        2023/02/04 ITパスポートを受験、取得しました。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <h2 id="works">Works　成果物紹介</h2>
+            <div class="block">
+                <div class="work">
+                    <h3>福祉施設のRPA案件</h3>
+                    <p>
+                        このRPAは、WAM NET（独立行政法人福祉医療機構が運営する福祉保健医療関連の情報提供サイト）公開のオープンデータ、障害福祉サービス等事業所データ（<a href="https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/" target="_blank" rel="noreferrer">こちら</a>）から、訓練系・就労系サービスと相談系サービスについての最新版を取得します。<br>
+                        そしてそのデータを基に、別途指定する都道府県に存在する事業所一覧のExcelファイルを作成するものになります。<br>
+                        「福祉サービス事業所一覧」シートの1行目に指定された都道府県名が、2行目以降にその都道府県に存在する事業所一覧表が記載されます。<br>
+                        詳しい動作については<a class="js-modal-open" href="" data-target="modal01">こちら</a>
+                    </p>
+                </div>
+                <div class="work">
+                    <h3>国勢調査案件</h3> <!--<a class="js-modal-open" href="" data-target="modal02"></a>-->
+                    <p>
+                        Pythonとデータ分析の練習の一環で、以下のオンラインコンペティションに参加しました。<br>
+                        運営：DX推進プラットフォームSIGNATE（<a href="https://signate.jp" target="_blank" rel="noreferrer">こちら</a>）<br>
+                        コンペティション：【練習問題】国勢調査からの収入予測（<a href="https://signate.jp/competitions/107" target="_blank" rel="noreferrer">こちら</a>）<br>
+                        <br>
+                        やったこと<br>
+                        ・Pythonを使って、分析に使う学習用データについて検分しました。<br>
+                        ・分析に使うモデルを使って、実際に分析しました。その際、使うモデルを変えてみたり、複数のモデルを組み合わせる手法を試しました。<br>
+                        <br>
+                        詳しいコード・説明については<a id="github" href="https://github.com/gregor01377/SIGNATE-incomeForecast-practice" target="_blank" rel="noreferrer">こちら<img src="img/github-mark.png"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <h2 id="skills">Skills</h2>
+            <div class="block">
+                <div class="skill">
+                    <h3>HTML CSS</h3>
+                    <h4>このポートフォリオサイト</h4>
+                        <p>
+                            今までの成果物や、取り組んできたことをまとめたポートフォリオサイトを作りました。<br>
+                            基本的にひとつのページで完結するようにしたのと、最近のトレンドであるモーダルウィンドウを導入してみました。<br>
+                            個人的に真っ白な背景だと目が痛いので、グレーをベースに明暗差でコンテンツの区切りが分かるようにしました。<br>
+                            HTML/CSS/JavaScriptは<a id="github" href="https://github.com/gregor01377/portfolio" target="_blank" rel="noreferrer">こちら<img src="img/github-mark.png"></a>
+                        </p>
+                </div>
+                <div class="skill">
+                    <h3>マクロ・VBA</h3>
+                    <h4>iパス試験会場のソート</h4>
+                        <p>
+                            UiPath（RPA）で取得してきた「ITパスポート試験会場の空席状況」のExcelファイルについて、体裁を整え必要なデータだけフィルタリングするVBAを作りました。<br>
+                            元ファイルではセルが結合されているので結合を解除し、その影響で空欄になっているセルに情報を埋めなおしたうえで日付順にソートした後、空席が1以上のデータだけ表示するようなフィルタリングを実行します。<br>
+                            コードは<a class="js-modal-open" href="" data-target="modal03">こちら</a>
+                        </p>
+                </div>
+                <div class="skill">
+                    <h3>UiPath (RPA)</h3>
+                    <h4>Works 「<a href="#works">福祉施設のRPA案件</a>」</h4>
+                    <h4>iパス試験会場の取得からソートまで</h4>
+                        <p>
+                            ITパスポートを受験する際、公式HPに掲載されていた試験会場の空席状況のpdf（<a href="https://www3.jitec.ipa.go.jp/JitesCbt/html/examhall/examhall_info.html" target="_blank" rel="noreferrer">こちら</a> ）が見づらいと感じ、見やすくするためのRPAを組みました。<br>
+                            pdfをダウンロード後、Excelに変換するサイトを使ってExcelファイル化し、VBAでデータを整える形にしました。また、利用者が事前にVBAをExcel内に組み込まなくてもいいように、VBAの書かれたテキストファイルを作成する形を取りました。
+                        </p>
+                </div>
+                <div class="skill">
+                    <h3>Google Apps Script</h3>
+                    <h4>意識調査回答の自動編集&返信・自動集計、導入マニュアルの作成</h4>
+                        <p>
+                            意識調査回答フォームをGoogleフォームで作成しました。そのフォームに回答があった際、回答結果についての評価点を併記したメールを作成し返信する機能を実装しました。<br>
+                            また、得られた回答をGoogleスプレッドシートに集計するとともに、結果を数値データとして活用できるような加工をする機能も実装しています。 <br>
+                            ※詳しい内容は割愛
+                        </p>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <h4>Works 「<a href="#works">国勢調査案件</a>」</h4>
+                </div>
+                <div class="skill">
+                    <h3>SQL</h3>
+                    <p>SQLiteを触る程度</p>
+                </div>
+                <div class="skill">
+                    <h3>Git <a id="github" href="https://github.com/gregor01377" target="_blank" rel="noreferrer">GitHub<img src="img/github-mark.png"></a></h3>
+                    <p>最近使い始めた。</p>
+                </div>
+                <div class="skill">
+                    <h3>その他</h3>
+                    <p>準備中……</p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <h2 id="contact">Contact</h2>
+            <div class="cont0">
+                <h4>何かありましたら、下のフォームかGitHubの<a id="github" href="https://github.com/gregor01377" target="_blank" rel="noreferrer">アカウント<img src="img/github-mark.png"></a>からお願いいたします。<br>
+                ※実際はサーバー等が必要なため、フォームからコメントを送る事は出来ません。</h4>
+            </div>
+            <form>
+                <div class="block">
+                    <div class="cont">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="forms" id="name" placeholder="Taro Tanaka / 田中太郎">
+                    </div>
+                    <div class="cont">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" class="forms" id="mail" placeholder="xxx@example.com">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="commt">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" class="forms" name="comment" cols="30" rows="5"></textarea>
+                        <div><a id="form-open" class="button-link">内容確認</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modal-content">
+        <div id="modal01" class="modal js-modal">
+            <div class="modal_bg js-modal-close"></div>
+            <div class="modal_content">
+                <h3>福祉施設のRPA案件</h3>
+                <div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <img src="img/overview.png"
+                                alt="作成したRPAは、5つのセクションで成り立っています。
+                                1：福祉事業所の一覧を保存するために必要なフォルダ・ファイルの作成
+                                2：福祉事業所のオープンデータをダウンロード
+                                3：データ収集対象の都道府県の取得・（あれば）記入された都道府県名の誤字脱字の修正
+                                4：データ収集が2回目以降の場合、前回収集したデータを取得
+                                5：今回収集したデータをExcelファイルに転記・前回データがある場合はそれとの比較">
+                            </div>
+                        </div>
+                        <div class="RPA1">
+                            <h4>0.作成したRPAの概要</h4>
+                            <p>作成したRPAは、5つのセクションで成り立っています。<br>
+                                1：福祉事業所の一覧を保存するために必要なフォルダ・ファイルの作成<br>
+                                2：福祉事業所のオープンデータをダウンロード<br>
+                                3：データ収集対象の都道府県の取得・（あれば）記入された都道府県名の誤字脱字の修正<br>
+                                4：データ収集が2回目以降の場合、前回収集したデータを取得<br>
+                                5：今回収集したデータをExcelファイルに転記・前回データがある場合はそれとの比較
+                            </p>
+                        </div>
+                    </div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <img src="img/madefolder.png"
+                                alt="デスクトップに「事業所一覧」フォルダがあり、「事業所一覧」フォルダの中には「DLデータ」フォルダと「取得する都道府県一覧.txt」ファイルが入っています。">
+                            </div>
+                            <!--
+                            <div>
+                                <img src="img/firsttxt.png"
+                                alt="「取得する都道府県一覧.txt」ファイル作成直後の中身。「東京都」とだけ書かれています。">
+                            </div>
+                            -->
+                        </div>
+                        <div class="RPA1">
+                            <h4>1：福祉事業所の一覧を保存するために必要なフォルダ・ファイルの作成</h4>
+                            <p>・デスクトップに「事業所一覧」フォルダを作り、その中に「DLデータ」フォルダと「取得する都道府県一覧.txt」ファイルを作ります。<br>
+                                ・「DLデータ」フォルダは、ダウンロードしてきたオープンデータのファイルを一時的に置いておき、必要がなくなったら削除しやすいようにするためのフォルダです。<br>
+                                ・「取得する都道府県一覧.txt」ファイルは、今回どの都道府県に存在する事業所のデータを集めるか指定するためのファイルです。ファイル作成直後は「東京都」と記入されています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <video controls playsinline muted src="img/dataDL.mp4"></video>
+                            </div>
+                        </div>
+                        <div class="RPA1">
+                            <h4>2：福祉事業所のオープンデータをダウンロード</h4>
+                            <p>・自動で「障害福祉サービス等情報公表システムデータのオープンデータ（<a href="https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/" target="_blank" rel="noreferrer">こちら</a>）」にアクセスし、動画のようにオープンデータをダウンロードします。<br>
+                                ・ダウンロードしたファイル（Zip形式）を「Downloads」フォルダから「DLデータ」フォルダに移動させることで、関係ないファイルを触らないようにしています。<br>
+                                ・「DLデータ」フォルダに存在するZipファイルを解凍し、残ったZipファイルを削除します。これでダウンロードしたオープンデータを取得できるようになります。<br>
+                                ・データテーブルをマージする機能を使い、取得したオープンデータを一つにまとめたデータテーブルを作成します。<br>
+                                ・最後に、取得したオープンデータのファイルを削除します。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <img src="img/prefectureflow.png">
+                            </div>
+                            <div>
+                                <img src="img/prefectureerror.png">
+                            </div>
+                        </div>
+                        <div class="RPA1">
+                            <h4>3：データ収集対象の都道府県の取得・（あれば）記入された都道府県名の誤字脱字の修正</h4>
+                            <p>・「取得する都道府県一覧.txt」ファイルの中身を読み取ります。<br>
+                                ・読み取った都道府県名について、誤字脱字のチェックをします（図フローチャート）。<br>
+                                ・誤字脱字があった場合、その場で修正が出来るように入力ダイアログがポップアップします（図エラーダイアログ）。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <img src="img/multipledata.png">
+                            </div>
+                        </div>
+                        <div class="RPA1">
+                            <h4>4：データ収集が2回目以降の場合、前回収集したデータを取得</h4>
+                            <p>・例えば今日が2023/05/15で、「事業所一覧」フォルダ内が図の通りだった場合、「230512」フォルダ内に入っている2023/05/12に集めたデータを取得します。<br>
+                                ※今回が初めてのデータ収集の場合、このステップはスキップされます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="RPA">
+                        <div class="image">
+                            <div>
+                                <img src="img/ichiran.png">
+                            </div>
+                            <div>
+                                <img src="img/sabun.png">
+                            </div>
+                        </div>
+                        <div class="RPA1">
+                            <h4>5：今回収集したデータをExcelファイルに転記・前回データがある場合はそれとの比較</h4>
+                            <p>・セクション2で作った「取得したオープンデータを一つにまとめたデータテーブル」から、セクション3で取得した「都道府県名」と住所の都道府県が一致するものを抜き出します。そして、Excelファイルに書き出します。<br>
+                                ・データ収集が2回目以降の場合、セクション4で取得した前回データと今回データを比較し、異なる部分について「追加一覧（前回はなかったけど今回はあったデータ）」「削除一覧（前回はあったけど今回はなかったデータ）」として書き出します。<br>
+                            </p>
+                            <div class="RPA2">
+                                <ul>
+                                <li>
+                                    ※比較の出し方
+                                </li>
+                                <li>
+                                    ・前回と取得状況が異なる都道府県について：事業所一覧シートに書き出した都道府県名を新旧データ共に配列化し、新データの都道府県名配列の各要素が旧データの都道府県配列の中身に存在するか、逆についても同様に調べるようにしました。
+                                そして、追加された都道府県・削除された都道府県として明記する形を取り、各事業所の情報は表には載せない形を取っています。
+                                </li>
+                                <li>
+                                    例：新データ（東京都、神奈川県）、旧データ（東京都、埼玉県）とする。<br>
+                                    新データの東京都が旧データに存在するか否か→する、新データの神奈川県が旧データに存在するか否か→否、よって神奈川県は今回新たに追加された都道府県である。<br>
+                                    旧データの東京都が新データに存在するか否か→する、旧データの埼玉県が新データに存在するか否か→否、よって埼玉県は今回削除された都道府県である。
+                                </li>
+                                </ul>
+                            </div>
+                            <p>
+                                ・前回と共通する都道府県について：事業所一覧シートに書き出した事業所の表を取得し、共通する都道府県のみのデータを新旧共に作成しました。そして「データテーブルを検索」を使い、新データの表の主キー（NO（※システム内の固有の番号、連番））が旧データの表に存在するか、逆についても同様に調べるようにしました。
+                                最終的に得られた差分（追加された事業所、削除された事業所）について、追加一覧・削除一覧に表として載せる形にしました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal02" class="modal js-modal">
+            <div class="modal_bg js-modal-close"></div>
+            <div class="modal_content">
+                <h3>国勢調査案件</h3>
+                <div>
+                    <div class="incomeforecast">
+                        <p>Pythonとデータ分析の練習の一環で、以下のオンラインコンペティションに参加しました。<br>
+                            運営：DX推進プラットフォームSIGNATE（<a href="https://signate.jp" target="_blank" rel="noreferrer">https://signate.jp</a>）<br>
+                            コンペティション：【練習問題】国勢調査からの収入予測（<a href="https://signate.jp/competitions/107" target="_blank" rel="noreferrer">https://signate.jp/competitions/107</a>）<br>
+                            順位(2023/04/03現在)：102/672<br>
+                            評価点：0.8728579<br>
+                            <br>
+                            やったこと<br>
+                            ・コンペティションのリーダーボードから、目標とする順位と分析精度を割り出しました。<br>
+                            ・Pythonを使って、分析に使う学習用データについて検分しました。<br>
+                            ・分析に使うモデルを使って、実際に分析しました。その際、使うモデルを変えてみたり、複数のモデルを組み合わせる手法を試しました。<br>
+                            <br>
+                            詳しいコード・説明については<a id="github" href="https://github.com/gregor01377/SIGNATE-incomeForecast-practice" target="_blank" rel="noreferrer">こちら<img src="img/github-mark.png"></a>
+                        </p>
+                    </div>
+                </div>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal03" class="modal js-modal">
+            <div class="modal_bg js-modal-close"></div>
+            <div class="modal_content">
+                <h3>iパス試験会場ソートのVBA</h3>
+                <div>
+                    <div class="VBA">
+                        <div class="image">
+                            <img src="img/VBA.png">
+                        </div>
+                        <div class="VBA1">
+                            <h4>0.変数を宣言</h4>
+                            <p>
+                                day/day2 :結合を解除したあとの空白のセルに、日付を入れるための変数<br>
+                                kaijou/kaijou2 :結合を解除したあとの空白のセルに、会場名を入れるための変数<br>
+                                address/address2 :結合を解除したあとの空白のセルに、住所を入れるための変数<br>
+                                LL :データの最終行を取得するための変数<br>
+                                i :繰り返し処理をするための変数
+                            </p>
+                            <h4>1.いらない情報列を落とし、セルの結合を解除</h4>
+                            <p>
+                                ○○.Delete :○○を削除<br>
+                                ActiveSheet.UsedRange.UnMerge :現在見ているシートの、データがある全てのセルの、マージ（結合）を解除
+                            </p>
+                            <h4>2.データの最終行を取得</h4>
+                            <p>
+                                Cells(Rows.Count, 6).End(xlUp).Row :6列目のシートの最終行から、上に向かって移動したときに最初にデータが入っているセルの、行番号
+                            </p>
+                            <h4>3.繰り返し処理を使って、空白のセルの中身を入れていく</h4>
+                            <p>
+                                For i = 3 To LL ※データが入っているセルの行番号が2からLLまでで、処理の中で基準にするセルの一つ上を参照するため、その分を調整しています<br>
+                                If ○○ = "" Then  Range("○" & i) = ○○2  End If :現在見ている行（i）について、セル（Range("○" & i)）の中身（○○）が空白だった場合、そのセルの中にひとつ上のセルと同じ中身（○○2）を入れる
+                            </p>
+                            <h4>4.席の空きがある会場と日時のみを表示</h4>
+                            <p>
+                                Range("A1").AutoFilter 6, ">0" :セルA1を含むデータテーブルにおいて、残席数（6列目）が0より大きいとき、というフィルターをかける
+                            </p>
+                            <h4>5.時間→日付の順で昇順にソート</h4>
+                            <p>
+                                With ActiveSheet ~ End With :現在見ているシートについて<br>
+                                .Range("A1").Sort :セルA1を含むデータテーブルをソート<br>
+                                key1:=.Range("○1") :セル（Range("○1")）を含む列（○）を基準にして<br>
+                                order1:=xlAscending :昇順で<br>
+                                Header:=xlYes :1行目はヘッダーなので並べ替えの対象外
+                            </p>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+    </div>
+    <div id="modal-form-content">
+        <p>入力内容は以下の通りです。</p>
+        <p id="outputname"></p>
+        <p id="outputmail"></p>
+        <p id="outputcomment"></p>
+        <p>戻るには「閉じる」か「背景」をクリックしてください。</p>
+        <p><a id="modal-close" class="button-link">閉じる</a></p>
+    </div>
+</body>
+
+</html>

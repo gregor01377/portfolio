@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+header {
+    padding: 20px 4% 10px;
+    width: 100%;
+    height: 72px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+}
+
+    h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #696969;
+    }
+
+    a:hover {
+        color: #00f;
+    }
+
+    header a:hover{
+        color: #00a;
+    }
+
+    header ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+    }
+
+    header ul li {
+        margin: 0 0 0 15px;
+        font-size: 14px;
+    }
+
+.container-fluid {
+    padding: 5px 0px;
+    background-color: #e6e6e6;
+}
+    
+    .contents {
+        margin: 0px 0px 5px;
+        padding: 10px;
+        background-color: #efefef;
+        
+    }
+    
+    #top {
+        padding-top: 95px;
+        margin-top: -95px;
+    }
+
+    h2 {
+        padding-top: 80px;
+        margin-top: -80px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #efefef;
+    }
+
+    .me {
+        margin: 10px;
+        padding: 5px;
+        background-color: #efefef;
+    }
+    
+    .work {
+        margin: 10px;
+        padding: 5px;
+        width: calc(100% / 2 - 20px);
+        background-color: #f6f6f6;
+    }@media screen and (max-width: 800px) {
+        .work {
+            width: 100%;
+        }
+    }
+
+    .skill {
+        margin: 10px;
+        padding: 5px;
+        width: calc(100% / 2 - 20px);
+        background-color: #f6f6f6;
+    }@media screen and (max-width: 800px) {
+        .skill {
+            width: 100%;
+        }
+    }
+
+    .skill p{
+        text-align: center;
+    }
+
+    .cont {
+        padding: 5px;
+        margin: 0px;
+        width: 40%;
+        background-color: #f6f6f6;
+    }@media screen and (max-width: 800px) {
+        .cont {
+            width: 100%;
+        }
+    }
+
+    .commt {
+        padding: 5px;
+        margin: 0px;
+        width: 80%;
+        background-color: #f6f6f6;
+    }@media screen and (max-width: 800px) {
+        .commt {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    h4 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .skill h4{
+        text-align: center;
+    }
+
+    .skill p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .cont0 h4{
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #github img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+.modal{
+    display: none;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .modal_bg{
+        background: rgba(0,0,0,0.8);
+        min-height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .modal_content{
+        background: #efefef;
+        padding: 10px 15px;
+        margin: 10px auto 20px;
+        position: relative;
+        width: 95%;
+    }
+
+    .RPA {
+        margin: 0 0 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #f6f6f6;
+    }
+
+    .RPA1{
+        margin: 5px;
+        padding: 5px;
+        width: calc(60% - 10px) ;
+    }@media screen and (max-width: 1000px) {
+        .RPA1 {
+            width: 100%;
+        }
+    }
+
+    .RPA1 p{
+        font-size: 18px;
+    }
+
+    .RPA2 {
+        font-size: 18px;
+    }
+
+    .RPA2 ul {
+        text-align: left;
+        list-style: none;
+        margin-top: -0.5rem;
+    }
+    
+    .RPA2 ul li {
+        margin-left: 1rem;
+        text-indent: -1rem;
+    }
+
+    .VBA {
+        margin: 0 0 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #f6f6f6;
+    }
+
+    .VBA1{
+        margin: 5px;
+        padding: 5px;
+        width: calc(60% - 10px) ;
+    }@media screen and (max-width: 1000px) {
+        .VBA1 {
+            width: 100%;
+        }
+    }
+
+    .VBA1 p{
+        font-size: 18px;
+    }
+
+    .image{
+        margin: 5px;
+        width: calc(40% - 10px);
+    }@media screen and (max-width: 1000px) {
+        .image {
+            width: 100%;
+        }
+    }
+
+    .image img{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .image video{
+        width: 100%;
+        padding: 5px;
+    }
+
+#modal-form-content {
+    width: 50% ;
+    margin: 0 ;
+    padding: 10px 20px ;
+    border: 2px solid #aaa ;
+    background: #f6f6f6 ;
+    position: fixed ;
+    display: none ;
+    z-index: 2 ;
+}
+      
+    #modal-overlay {
+        z-index: 1 ;
+        display: none ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        width: 100% ;
+        height: 120% ;
+        background-color: rgba( 0,0,0, 0.75 ) ;
+    }
+    
+    .button-link {
+        color: #606060 ;
+        text-decoration: underline ;
+    }
+     
+    .button-link:hover {
+        cursor: pointer ;
+        color: #00f ;
+    }
