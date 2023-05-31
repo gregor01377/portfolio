@@ -2,6 +2,7 @@
 
 ## About this repository
 こちらは、私のポートフォリオサイトのコード置き場になります。<br>
+プライベート用に作っていたものを公開用に修正してから新しいリポジトリに移したため、それ以前のCommit情報は見られないようになっています。ご了承ください。<br>
 About files以降では、各ファイルについて軽い説明を載せています。
 
 ## About files
@@ -19,7 +20,7 @@ github-mark.pngのみ、DLしたものになります。（こちらから→ ht
 実際のポートフォリオサイトを構成するコード群です。
 * index.html ：HTMLファイルで、サイトの構成や文章はこちらで管理しています。
 * style.css ：CSSファイルで、サイトの視覚的な配置やフォント、背景色等を管理しています。
-* portfolio.js ：JavaScriptファイルで、サイトの動的部分（モーダルウィンドウ）を管理しています。以下のサイトのコードを参考にしたり使わせていただきました。<br>
+* portfolio.js ：JavaScriptファイルで、サイトの動的部分（モーダルウィンドウ）を管理しています。以下のサイトのコードを使ったり参考にさせていただきました。<br>
     https://codepen.io/c110270/pen/rNeeqao <br>
     https://syncer.jp/jquery-modal-window
 
